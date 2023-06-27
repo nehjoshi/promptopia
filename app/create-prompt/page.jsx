@@ -1,9 +1,9 @@
 import React from 'react'
 
-const CreatePrompt = () => {
+const CreatePost = () => {
   return (
-    <div>CreatePrompt</div>
+    <div>Create POSt!!!</div>
   )
 }
 
-export default CreatePrompt;
+export default CreatePost

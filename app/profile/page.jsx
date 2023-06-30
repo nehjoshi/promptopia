@@ -6,13 +6,11 @@ import Profile from '@components/Profile';
 
 const MyProfile = () => {
 
-    const searchParams = useSearchParams();
     const { data: session } = useSession();
     const [posts, setPosts] = useState([]);
     const router = useRouter();
 
     useEffect(() => {
-        console.log(searchParams.get("name"));
         const fetchPosts = async () => {
             const res = await fetch(`/api/users/${session?.user.id}/posts`);
             const data = await res.json();
